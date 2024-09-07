@@ -7,7 +7,7 @@ This is a simple quote generator app that displays one quote at a time, with the
 - **Category Selection**: Users can toggle between different categories (e.g., Science, Life, Philosophy, etc.) to filter quotes.
 - **Quote Navigation**: "Next" and "Previous" buttons allow users to navigate through the quotes in sequential order.
 - **Random Quote**: A "Random" button allows users to display a random quote from the selected category.
-- **Dark/Light Mode**: A switch to toggle between dark and light modes for the app’s interface.
+- **Dark/Light Mode**: A switch to toggle between dark and light modes for the app’s interface. 
 - **Font Size Adjustment**: Users can increase or decrease the font size of the displayed quotes.
 - **Mobile-Friendly**: The app is designed to be responsive and mobile-friendly.
 
