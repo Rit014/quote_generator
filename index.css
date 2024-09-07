@@ -1,0 +1,122 @@
+:root {
+    --font-size: 1.5rem;
+    --bg-light: #E6E6FA;
+    --bg-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #E6E6FA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* main container */
+
+.container {
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* another div for all the controls */
+.controls {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#category{
+    padding: 5px 10px;
+    background: #ffffff;
+}
+
+.quote-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: #452c63;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#quoteText {
+    font-size: var(--font-size);
+    font-family: "Kanit";
+}
+
+.navigation-buttons button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle label {
+    margin-right: 10px;
+}
+
+/* for changing mode of background */
+.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+button {
+    padding: 10px;
+}
+
+.font-controls {
+    display: flex;
+    gap: 3px;
+   
+}
+
+.font-controls button {
+    min-height: 50px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/* for responsive design */
+
+@media (max-width: 1076px) {
+    .controls {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    #quoteText{
+        font-size: 1.3rem;
+    }
+
+  
+}

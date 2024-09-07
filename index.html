@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Quote Generator</h1>
+
+        <div class="controls">
+            <label for="category">Choose a category:</label>
+            <select id="category" onchange="filterQuotes()">
+                <option value="all">All</option>
+                <option value="science">Science</option>
+                <option value="family_quotes">Family_quotes</option>
+                <option value="life">Life</option>
+                <option value="success_and_yourself_quotes">Success_and_yourself_quotes</option>
+                <option value="friends_quotes">Friends_quotes</option>
+            </select>
+
+            <div class="font-controls">
+                <button onclick="changeFontSize('increase')">A+</button>
+                <button onclick="changeFontSize('decrease')">A-</button>
+            </div>
+
+            <div class="theme-toggle">
+                <label for="themeSwitch">Dark Mode</label>
+                <input type="checkbox" id="themeSwitch" onchange="toggleTheme()">
+            </div>
+        </div>
+
+        <div class="quote-container">
+            <p id="quoteText"></p>
+            <p id="quoteAuthor"></p>
+        </div>
+
+        <div class="navigation-buttons">
+            <button onclick="previousQuote()">Previous</button>
+            <button onclick="nextQuote()">Next</button>
+            <button onclick="randomQuote()">Random</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
